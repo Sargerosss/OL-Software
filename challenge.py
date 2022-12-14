@@ -33,3 +33,6 @@ def challenge1():
     elif choice == 2:
         print("The only hint I can give is unsafe password usage.")
         challenge1()
+
+def challenge2():
+    print("Still progress")

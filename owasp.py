@@ -1,4 +1,5 @@
-from bac import bac
+from bac import *
+from crypto import *
 def owaspTop10():
     print("=======================")
     print("The current Top Ten consists of:")
@@ -18,7 +19,7 @@ def owaspTop10():
     if choice == 1:
         bac()
     elif choice == 2:
-        print("1")
+        cryptographic()
     elif choice == 3:
         print("1")
     elif choice == 4:

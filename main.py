@@ -1,6 +1,8 @@
 import time
 from owasp import *
 from challenge import *
+from passcheck import *
+from tools import *
 def ApplicationStart():
     print("=======================")
     print("This is Donkey's Cybersecurity Environment")
@@ -19,9 +21,9 @@ def ApplicationStart():
     if choice == 1:
         owaspTop10()
     elif choice == 2:
-        johnRipper()
+        passwordCheckText()
     elif choice == 3:
-        tools()
+        toolList()
     elif choice == 4:
         resources()
     elif choice == 5:
