@@ -3,6 +3,7 @@ from owasp import *
 from challenge import *
 from passcheck import *
 from tools import *
+from resource import *
 def ApplicationStart():
     print("=======================")
     print("This is Donkey's Cybersecurity Environment")
@@ -25,7 +26,8 @@ def ApplicationStart():
     elif choice == 3:
         toolList()
     elif choice == 4:
-        resources()
+        resourceText()
     elif choice == 5:
         challenges()
+
 ApplicationStart()

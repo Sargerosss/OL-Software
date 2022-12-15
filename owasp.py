@@ -1,5 +1,7 @@
 from bac import *
 from crypto import *
+from injection import *
+import main
 def owaspTop10():
     print("=======================")
     print("The current Top Ten consists of:")
@@ -13,6 +15,7 @@ def owaspTop10():
     print("8. Software and Data integrity failures")
     print("9. Security logging and monitoring failures")
     print("10. Server Side Request Forgery")
+    print("11. Go back")
     print("=======================")
     choice = int(input("Please input a number "))
 
@@ -21,7 +24,7 @@ def owaspTop10():
     elif choice == 2:
         cryptographic()
     elif choice == 3:
-        print("1")
+        injectionText()
     elif choice == 4:
         print("1")
     elif choice == 5:
@@ -36,4 +39,6 @@ def owaspTop10():
         print("1")
     elif choice == 10:
         print("1")
+    elif choice == 11:
+        main.ApplicationStart()
 
