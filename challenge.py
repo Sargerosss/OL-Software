@@ -11,7 +11,7 @@ def challenges():
     if choice == 1:
         challenge1()
     elif choice == 2:
-        print("not yet")
+        challenge2()
     elif choice == 3:
         print("not yet")
     elif choice == 4:
@@ -35,4 +35,4 @@ def challenge1():
         challenge1()
 
 def challenge2():
-    print("Still progress")
+    print("Somewhere in this application, there is an option you can choose but its not listed. Can you find it?")
