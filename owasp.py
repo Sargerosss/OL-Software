@@ -1,7 +1,10 @@
 from bac import *
 from crypto import *
 from injection import *
+from design import *
 import main
+
+
 def owaspTop10():
     print("=======================")
     print("The current Top Ten consists of:")
@@ -26,7 +29,7 @@ def owaspTop10():
     elif choice == 3:
         injectionText()
     elif choice == 4:
-        print("1")
+        insecureDesign()
     elif choice == 5:
         print("1")
     elif choice == 6:
@@ -44,4 +47,3 @@ def owaspTop10():
     else:
         print("Invalid option, restarting")
         owaspTop10()
-
