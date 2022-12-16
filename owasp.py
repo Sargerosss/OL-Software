@@ -41,4 +41,7 @@ def owaspTop10():
         print("1")
     elif choice == 11:
         main.ApplicationStart()
+    else:
+        print("Invalid option, restarting")
+        owaspTop10()
 

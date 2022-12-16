@@ -1,5 +1,7 @@
 import main
 import time
+
+
 def resourceText():
     print("=======================")
     print("Resources to use")
@@ -45,4 +47,7 @@ def resourceText():
         time.sleep(2)
         resourceText()
     elif choice == 4:
-        main.ApplicationStart() 
+        main.ApplicationStart()
+    else:
+        print("Invalid option, restarting")
+        resourceText()

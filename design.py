@@ -1,1 +1,20 @@
-4. Insecure Design
+import time
+import owasp
+def insecureDesign():
+    print("=======================")
+    print("4. Insecure Design")
+    print("=======================")
+    time.sleep(1)
+    print("This is a bit difficult to explain but the problem with this one is in the design phase.")
+    print("Let's say you have a cinema, you can book groups but only groups with more than 15 people need a deposit.")
+    print("So let's say you don't wanna put down a deposit but you have 24 people to go to the cinema with.")
+    time.sleep(2)
+    print("Why not do 2 times 12 people, you'll avoid the cost and the cinema is also losing this money.")
+    print("But what happens with a full cinema room, you want to have 200 people, why don't you book 15-20 times a smaller group to avoid the costs.")
+    print("Now that's just 1 evening, but what about every day a full cinema room booked without paying the deposit.")
+    time.sleep(1)
+    print("And this can be easily fixed, every group needs to put down a deposit")
+    print("The key part to remember, think about how something can be misused, and adapt to that.")
+    print("People can always find a way and especially hackers can use this to their advantage.")
+    time.sleep(3)
+    owasp.owaspTop10()

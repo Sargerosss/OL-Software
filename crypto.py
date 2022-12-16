@@ -4,7 +4,7 @@ import owasp
 import time
 def cryptographic():
     print("=======================")
-    print("Cryptographic Failures")
+    print("2. Cryptographic Failures")
     print("=======================")
     print("This is an issue when sensitive data is not properly secured. Think about passwords that aren't hashed.")
     print("Let's use an example.")

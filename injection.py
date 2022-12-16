@@ -1,7 +1,7 @@
 import owasp
 def injectionText():
     print("=======================")
-    print("Injection")
+    print("3. Injection")
     print("=======================")
     print("This is number 3 on the OWASP Top 10 list and is about different kinds of Injection.")
     print("To make it easier, we're going to focus on SQL Injection and how to prevent that")

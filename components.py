@@ -1,1 +1,1 @@
-6. Vulnerable and outdated components
+# 6. Vulnerable and outdated components

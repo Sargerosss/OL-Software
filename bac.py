@@ -4,7 +4,7 @@ adminpanel_launch = 0
 def bac():
     global adminpanel_launch
     print("=======================")
-    print("Broken Access Control")
+    print("1. Broken Access Control")
     print("Access control enforces policy such that users cannot act outside of their intended permissions. Failures typically lead to unauthorized information disclosure, modification, or destruction of all data or performing a business function outside the user's limits.")
     print("Let's have an example:")
     print("Currently, you're just an user but why can you see the Admin Panel and Helpdesk Panel, can you access it? What happens?")

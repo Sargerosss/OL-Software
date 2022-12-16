@@ -29,7 +29,10 @@ def ApplicationStart():
         resourceText()
     elif choice == 5:
         challenges()
-    elif choice == 6:
+    elif choice == 9:
         helpdeskPanel()
+    else:
+        print("Invalid option, restarting")
+        ApplicationStart()
 
 ApplicationStart()

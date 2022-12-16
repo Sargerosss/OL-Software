@@ -1,5 +1,7 @@
 import main
 import time
+
+
 def helpdeskPanel():
     print("=======================")
     print("Challenge 2 part 1 solved")
@@ -27,3 +29,6 @@ def helpdeskPanel():
         helpdeskPanel()
     elif choice == 4:
         main.ApplicationStart()
+    else:
+        print("Invalid option, restarting")
+        helpdeskPanel()
