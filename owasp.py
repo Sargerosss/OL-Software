@@ -48,4 +48,4 @@ def owaspTop10():
         main.ApplicationStart()
     else:
         print("Invalid option, restarting")
-        owaspTop10()
+        # owaspTop10()
