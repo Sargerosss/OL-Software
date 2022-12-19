@@ -63,3 +63,7 @@ def challenge2():
     else:
         print("Invalid option, restarting")
         challenge2()
+
+
+def challenge3():
+    print("Find all vulnerabilities in (file)")

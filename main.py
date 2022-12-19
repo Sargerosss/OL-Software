@@ -1,9 +1,11 @@
 import time
-from owasp import *
+import owasp
 from challenge import *
 from passcheck import *
 from tools import *
 from resource import *
+
+
 def ApplicationStart():
     print("=======================")
     print("This is Donkey's Cybersecurity Environment")
@@ -34,5 +36,6 @@ def ApplicationStart():
     else:
         print("Invalid option, restarting")
         ApplicationStart()
+
 
 ApplicationStart()

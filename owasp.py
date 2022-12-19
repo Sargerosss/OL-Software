@@ -2,6 +2,8 @@ from bac import *
 from crypto import *
 from injection import *
 from design import *
+from security import *
+from components import *
 import main
 
 
@@ -31,9 +33,9 @@ def owaspTop10():
     elif choice == 4:
         insecureDesign()
     elif choice == 5:
-        print("1")
+        securityMisconfiguration()
     elif choice == 6:
-        print("1")
+        components()
     elif choice == 7:
         print("1")
     elif choice == 8:
