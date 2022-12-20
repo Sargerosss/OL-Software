@@ -1,5 +1,6 @@
 import maskpass
 import main
+import time
 
 
 def challenges():
@@ -15,7 +16,7 @@ def challenges():
     elif choice == 2:
         challenge2()
     elif choice == 3:
-        print("not yet")
+        challenge3()
     elif choice == 4:
         main.ApplicationStart()
     else:
@@ -66,4 +67,19 @@ def challenge2():
 
 
 def challenge3():
-    print("Find all vulnerabilities in (file)")
+    print("Find all vulnerabilities in vuln.txt")
+    file = open('vuln.txt', 'r')
+    content = file.readlines()
+    for line in content:
+        print("{}".format(line.strip()))
+    print("Can you find them all?")
+    print("1. Hint please")
+    print("2. Go back")
+    choice = int(input("Please choose a number "))
+
+    if choice == 1:
+        print("Hint: Read all lines and think like a hacker")
+        time.sleep(4)
+        challenge3()
+    elif choice == 2:
+        main.ApplicationStart()

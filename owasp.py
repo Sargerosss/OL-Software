@@ -4,7 +4,9 @@ from injection import *
 from design import *
 from security import *
 from components import *
-import main
+from identification import *
+from software import *
+import main as main1
 
 
 def owaspTop10():
@@ -37,15 +39,15 @@ def owaspTop10():
     elif choice == 6:
         components()
     elif choice == 7:
-        print("1")
+        identification()
     elif choice == 8:
-        print("1")
+        softwareText()
     elif choice == 9:
         print("1")
     elif choice == 10:
         print("1")
     elif choice == 11:
-        main.ApplicationStart()
+        main1.ApplicationStart()
     else:
         print("Invalid option, restarting")
-        # owaspTop10()
+        owaspTop10()

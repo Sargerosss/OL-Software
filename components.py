@@ -1,4 +1,7 @@
 # 6. Vulnerable and outdated components
+import time
+import main
+
 
 def components():
     print("=======================")
@@ -18,5 +21,23 @@ def componentsPractical():
 
     if choice.lower() == "windows":
         print("Let's check for updates")
-        for x in range(0, 100, 5):
+        for x in range(0, 105, 5):
             print("Checking for updates,", x, "%")
+        print("Updates found: Microsoft Defender AntiVirus")
+        print("Windows Update 21H2")
+        choice = input("Would you like to start the updates? Yes or no ")
+        if choice.lower() == "yes":
+            print("Starting updates")
+            time.sleep(5)
+            inp = input("Would you like to restart? Yes or no ")
+            if choice.lower() == "yes":
+                print("Successfully restarted application")
+                time.sleep(2)
+                main.ApplicationStart()
+            else:
+                print("No worries, let's try it again")
+                componentsPractical()
+
+        else:
+            print("No worries, let's try it again")
+            componentsPractical()

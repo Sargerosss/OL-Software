@@ -1,10 +1,11 @@
-import owasp
+
 from challenge import *
 from passcheck import *
 from tools import *
 from resource import *
 
 import time
+from owasp import owaspTop10
 
 
 def ApplicationStart():
@@ -12,7 +13,7 @@ def ApplicationStart():
     print("This is Donkey's Cybersecurity Environment")
     print("Consisting of multiple features to help you understand and start in Cybersecurity.")
     print("=======================")
-    time.sleep(2)
+    time.sleep(1)
     print("The features are:")
     print("1. OWASP Top 10 list")
     print("2. Test your password strength")
