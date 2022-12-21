@@ -6,6 +6,8 @@ from security import *
 from components import *
 from identification import *
 from software import *
+from monitoring import *
+from forgery import *
 import main as main1
 
 
@@ -43,9 +45,9 @@ def owaspTop10():
     elif choice == 8:
         softwareText()
     elif choice == 9:
-        print("1")
+        monitoringText()
     elif choice == 10:
-        print("1")
+        forgeryText()
     elif choice == 11:
         main1.ApplicationStart()
     else:

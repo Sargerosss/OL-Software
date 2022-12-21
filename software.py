@@ -13,6 +13,7 @@ def softwareText():
     print("What if your whole project is full of errors because of this?")
     print("An update can do more than you think. And that's also something to be aware of.")
     print("To fix this, you can write your own software to manage the updates, or what about packages that are more trusted?")
+    softwarePractical()
 
 
 def softwarePractical():
