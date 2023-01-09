@@ -22,6 +22,7 @@ def componentsPractical():
     if choice.lower() == "windows":
         print("Let's check for updates")
         for x in range(0, 105, 5):
+            time.sleep(1)
             print("Checking for updates,", x, "%")
         print("Updates found: Microsoft Defender AntiVirus")
         print("Windows Update 21H2")
@@ -32,6 +33,7 @@ def componentsPractical():
             inp = input("Would you like to restart? Yes or no ")
             if choice.lower() == "yes":
                 print("Successfully restarted application")
+                print("Updated application to version V1.02")
                 time.sleep(2)
                 main.ApplicationStart()
             else:

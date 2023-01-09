@@ -1,4 +1,5 @@
 import owasp
+import time
 apache_default_run = 0
 
 
@@ -14,11 +15,12 @@ def securityMisconfiguration():
     print("Let's say the default website is just a http + ip address, and the correct one is https and a domain name. You can ofc still access the http site which leads to the default page")
     print("But how do you solve this?")
     print("Let's do a bit practical.")
+    time.sleep(3)
     if apache_default_run == 0:
         practicalSecurity()
         apache_default_run = 1
     if apache_default_run > 0:
-        print("You lost access to the Admin Panel")
+        print("You lost access to the Webpage")
         owasp.owaspTop10()
 
 
@@ -28,6 +30,7 @@ def practicalSecurity():
     print("A hacker now can access from this page and this is not correctly secured.")
     print("Let's report this and let the page disappear.")
     print("The key part to remember: remove any default configuration and be sure to test it")
+    time.sleep(5)
     global apache_default_run
     apache_default_run = 1
     owasp.owaspTop10()

@@ -24,10 +24,10 @@ def softwarePractical():
     for line in content:
         print("{}".format(line.strip()))
     time.sleep(1)
-    package1 = input("Which first package might be risky to use?")
+    package1 = input("Which first package might be risky to use? ")
     if package1.lower() == "sampo" or package1.lower() == "zwpython":
         print("Correct, that's the first one.")
-        package2 = input("Which second package might be risky?")
+        package2 = input("Which second package might be risky? ")
         if package2.lower() == "sampo" or package2.lower() == "zwpython":
             print("Good job, you found both of them, this doesn't mean to just delete them, but be aware that it could be risky to use.")
             owaspTop10()
