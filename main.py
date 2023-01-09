@@ -1,11 +1,9 @@
-
-from challenge import *
 from passcheck import *
 from tools import *
 from resource import *
-
-import time
 from owasp import owaspTop10
+from challenge import *
+import time
 
 
 def ApplicationStart():
@@ -27,13 +25,14 @@ def ApplicationStart():
     if choice == 1:
         owaspTop10()
     elif choice == 2:
-        passwordCheckText()
+        print("Still in progress")
+        ApplicationStart()
     elif choice == 3:
         toolList()
     elif choice == 4:
         resourceText()
     elif choice == 5:
-        challenges()
+        challengesText()
     elif choice == 9:
         helpdeskPanel()
     else:
